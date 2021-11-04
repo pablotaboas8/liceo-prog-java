@@ -23,6 +23,7 @@ public class Principal {
 		String mensaje="";
 		
 		switch (opcion) {
+		
 		case 1:
 			int contador1 = 0;
 			//Generar numero aleatorio
@@ -39,13 +40,15 @@ public class Principal {
 					break;
 				
 					
+				}else if(numeroUsuario1 >= numeroAleatorio1) {
+					System.out.println("INCORRECTO, el número es menor, llevas " + contador1 +" intento(s), prueba otra vez");
 				}else {
-					System.out.println("INCORRECTO, prueba otra vez");
+					System.out.println("INCORRECTO, el número es mayor, llevas " + contador1 +" intento(s), prueba otra vez");
 				}
 				
-			}while(contador1<3);
-				
+			}while(contador1<3);	
 			break;
+			
         case 2:
         	int contador2 = 0;
 			//Generar numero aleatorio
@@ -61,12 +64,15 @@ public class Principal {
 					break;
 				
 					
-				}else {System.out.println("INCORRECTO, prueba otra vez");
+				}else if(numeroUsuario2 >= numeroAleatorio2) {System.out.println("INCORRECTO, el número es menor, llevas "+ contador2+" intento(s), prueba otra vez");
+					
+				}else {System.out.println("INCORRECTO, el número es mayor, llevas "+ contador2+" intento(s), prueba otra vez");
 					
 				}
 				
 			}while(contador2<5);
 			break;
+			
         case 0:
         	System.out.println("Hasta luego :)");
         	System.exit(0);

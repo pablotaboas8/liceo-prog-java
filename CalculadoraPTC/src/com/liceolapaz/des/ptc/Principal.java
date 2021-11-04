@@ -31,9 +31,6 @@ public class Principal {
 			int suma = 0;
 			suma = numeroSuma1 + numeroSuma2;
 			System.out.println("La suma es " + numeroSuma1  + " + " + numeroSuma2 + " = " + suma);
-			
-
-			
 			break;
 		case 2:
 			// Pedir primer Numero del usuario
